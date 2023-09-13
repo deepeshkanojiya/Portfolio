@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" type="" href="style.css">
+    <script src="https://kit.fontawesome.com/0eb6079920.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      
+        <nav>
+          <img src="Images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick ="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick ="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Deepesh </span> ---Mumbai - India</h1>
+        </div>
+    </div>
+  </div>
+
+  <!-- --------- about --------- -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+      <div class="about-col-1">
+        <img src="Images/Backround.png" width="300" height="400" alt="">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-titles">About me</h1>
+        <p>To utilize and enhance my skill-set by working in a team environment,on idea & project that have a real life,large scale impact. To obtain position requiring
+          strong analytical and organizational skills in technical support group.
+          </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('educations')">Educations</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+           <li><span>Programming :</span><br>• C • C++ • Datastructure and Algorithm • Java • Javascript • MySQL • HTML • CSS • MongoDB • Python • OOPs</li> 
+           <li><span>Familiar :</span><br>• NodeJS • React.js •ExpressJS •UI/UX</li> 
+           <li><span>Other :</span><br>• Linux • Git • Vs Studio 
+            • MS-Excel • MS-Word • MS-PowerPoint
+            • Computer Network & Cyber Security
+            • Operating System • Information system</li> 
+            <li><span>Language :</span><br>• English • Hindi<br><p class="Language"> Full Professional Proficiency</p></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span> Fresher </span><br><p class="IT">
+
+
+
+
+          </ul>
+        </div>
+        <div class="tab-contents" id="educations">
+          <ul>
+           <li><span>Bachelor of Technology - IT</span><br>University Institute of engineering and
+            Technology (U.I.E.T.), Kanpur - CSJMU <br> <p class="IT"> Aug 201 - May 2023</p></li> 
+           <li><span>Intermediate 12th - Science (PCM)</span><br>Janta Vidyalaya Khopoli, Mumbai <br> <p class="IT"> July 2017 - May 2018</p></li> 
+           <li><span>High School 10th - Science</span><br>Anand Shala, khopoli <br> <p class="IT"> July 2015 - May 2016</p></li> 
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- --------services ----------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title"> My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Website development</h2>
+          <p>I have deep interested in web development and I have created project using html, css, javascript, google sheet etc. and I am very much interested in making website which helps in growth of my skill and knowledge and checkout on Github account. </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Project Development</h2>
+          <p>I have created project Weather app using React, which uses an API to fetch the real time Data of weather forecast. checkout on Github account</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Web Design </h2>
+          <p>A web designer creates the layout and design of a website. In simple terms, a website designer makes a site look good. They use design programs to create visual elements.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- -------portfolio------- -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title"> My work</h1>
+    <div class="work-list">
+      <div class="work">
+       
+        <img src="images/img4.png"  height="285" alt="" >
+      
+        <div class="layer">
+          <h3>Competative coder</h3>
+          <p>I have coded on different plateform like leetcode, codechef,Hackerrank and geeksfor geeks</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/img2.png" height="285"  alt="">
+        <div class="layer">
+          <h3>Full stack development</h3>
+          <p>I have specialization in information Technology and I have created some project using HTML, CSS, Javascript,reactjs,nodejs,SQL & MongoDB, Pyhton, java</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/img3.png" height="285" alt="" >
+        <div class="layer">
+          <h3>Weather forecast app</h3>
+          <p>A technical project has been made to frecast the weather using react. The real time data of the forecast is fetched through the online Api service.</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+
+<!-- -------contact------- -->
+<div id="contact">
+   <div class="container">
+   <div class="row">   <!--/*sbh row me chla jayega*/ -->
+    <div class="contact-left">
+     <h1 class="sub-title">Contatct me</h1>      
+     <p> <i class="fas fa-paper-plane"></i> deepeshkanojiya123@gmail.com</p>
+    <p><i class="fas fa-phone-square alt"></i>
+        9511290735</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/deepeshkanojiya/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/deepeshkanojiya"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/get_ur_dep/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/geturdep"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+        
+        <a href="images/Deepesh_CV.pdf" download class="btn btn2">Download CV</a>
+       </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="your name" required>
+          <input type="email" name="Email" placeholder="your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+   </div>
+   <div class="copyright">
+    <P>We do our work very <i class="fas fa-heart"></i>gracefully and in aesthetic manner. </P>
+   </div>
+</div>
+
+
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+
+    }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  </script>
+
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwM96LDWq85JO2p-EfQ45oamrTIKC-0L6aYdBhcGI2F3bj5mq7O3kRExqaZfr-V3OcM3g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },2000)
+        form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
